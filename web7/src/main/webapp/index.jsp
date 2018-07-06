@@ -31,7 +31,7 @@
             return data.toLowerCase();
         }
     %>
-    <%= toLowerCase("GERARAHERE")%>
+    To lover case "GERARAHERE": <%= toLowerCase(" GERARAHERE.")%>
 
 
 

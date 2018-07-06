@@ -47,7 +47,7 @@
             <br/>
 
             <nav>
-                <h1>Show students by gender</h1>
+                <h3>Show students by gender</h3>
                 <form action="com.studentsList.servlets.MyServlet" method="get">
                     m <input type="radio" name = "gender" value="m" checked>
                     w <input type="radio" name="gender" value="w">

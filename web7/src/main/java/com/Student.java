@@ -3,9 +3,20 @@ package com;
 
 public class Student {
 
+    private int id;
     private String name;
     private String surname;
     private String gender;
+    private String phone;
+
+    public Student() {
+    }
+
+    public Student(String name, String surname, String gender) {
+        this.name = name;
+        this.surname = surname;
+        this.gender = gender;
+    }
 
     public String getName() {
         return name;
@@ -30,6 +41,29 @@ public class Student {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }
+
+
+
+
+
+
+
 
 

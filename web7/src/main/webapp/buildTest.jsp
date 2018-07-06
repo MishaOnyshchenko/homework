@@ -5,11 +5,14 @@
     <title>build</title>
 </head>
 <body>
-<h2>JSP build</h2>
-Request user agent: <%= request.getHeader("User-Agent")%>
-<br/><br/>
+    <h2>JSP build</h2>
 
-Request language: <%= request.getLocale()%>
+    Request user agent: <%= request.getHeader("User-Agent")%>
+
+    <br/><br/>
+
+    Request language: <%= request.getLocale()%>
+
 
 </body>
 </html>

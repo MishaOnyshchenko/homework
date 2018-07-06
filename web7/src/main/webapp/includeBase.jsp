@@ -6,11 +6,12 @@
 </head>
 <body>
 
-<jsp:include page="includeHead.html"/>
+
+<jsp:include page = "includeFooter.jsp"/>
 <br/>
 <p>My text</p>
+<jsp:include page="includeHead.html"/>
 
-<jsp:include page="includeFooter.jsp"/>
 
 </body>
 </html>
