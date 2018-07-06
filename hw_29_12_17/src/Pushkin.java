@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Pushkin {
     public static void main(String[] args) {
         String str = new String ("Был и я среди донцов...\n" +

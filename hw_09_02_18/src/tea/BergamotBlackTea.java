@@ -1,7 +1,6 @@
 package tea;
 
 import ingredients.Bergamot;
-import ingredients.BlackTea;
 
 public class BergamotBlackTea extends BlackTeaDrink implements Bergamot {
     protected double bergamotPrice = 0.6;

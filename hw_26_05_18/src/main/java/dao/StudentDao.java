@@ -2,9 +2,6 @@ package dao;
 
 import domenObject.Student;
 
-import java.sql.*;
-import java.util.*;
-
 public interface StudentDao {
 
     List<Student> selectAllStudents(List<Student> studListDao) throws SQLException;

@@ -2,7 +2,6 @@ package dao;
 
 import domenObject.Student;
 
-import java.sql.*;
 import java.util.List;
 
 public class StudentDaoImpl implements StudentDao {

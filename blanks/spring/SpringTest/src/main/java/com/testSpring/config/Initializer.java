@@ -1,7 +1,8 @@
 package com.testSpring.config;
 
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
 import javax.servlet.Filter;
 //зарегистрировать конфигурацию в Spring Context
 public class Initializer extends AbstractAnnotationConfigDispatcherServletInitializer {

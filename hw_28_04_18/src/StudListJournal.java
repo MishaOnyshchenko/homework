@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 public class StudListJournal implements Journal {
 
     final static String FILENAME = "D://studlist.txt";

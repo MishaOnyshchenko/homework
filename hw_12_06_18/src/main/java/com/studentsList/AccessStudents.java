@@ -5,9 +5,6 @@ import com.studentsList.model.Student;
 import com.studentsList.model.createStudents.CreateStudents;
 import com.studentsList.service.connection.JdbcConnection;
 
-import java.sql.*;
-import java.util.*;
-
 /*Создать метод, который получает из базы данных имена студентов,
 далее вывести их в браузере. Естественно предварительно нужно создать БД,
 таблицу и наполнить ее студентами с именами..*/

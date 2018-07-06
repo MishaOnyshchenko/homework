@@ -3,8 +3,6 @@ package service.reader_pack;
 import domenObject.Student;
 import org.junit.Test;
 
-import java.util.*;
-
 import static junit.framework.TestCase.assertEquals;
 
 public class ScriptReaderTest {

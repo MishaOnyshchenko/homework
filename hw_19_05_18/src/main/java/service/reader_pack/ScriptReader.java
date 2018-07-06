@@ -2,10 +2,6 @@ package service.reader_pack;
 
 import domenObject.Student;
 
-import java.io.*;
-import java.util.*;
-import java.util.regex.*;
-
         /*Нужно найти способ сгенерировать данные таблицы в файл любого расширения.
         После чего программно считать его и вывести в консоль:
         - количество студентов в таблице;

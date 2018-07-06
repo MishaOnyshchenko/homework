@@ -1,6 +1,3 @@
-
-import java.util.*;
-
 public class DictionaryTest {
 
     public static void main(String[] args) {

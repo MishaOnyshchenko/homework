@@ -2,8 +2,6 @@ package service.writer_pack;
 
 import service.reader_pack.ScriptReader;
 
-import java.io.*;
-
 
 public class ScriptWriter implements ScriptWriterService {
 

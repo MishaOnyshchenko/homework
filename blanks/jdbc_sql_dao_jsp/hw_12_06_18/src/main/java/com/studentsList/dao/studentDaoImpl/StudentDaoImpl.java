@@ -3,9 +3,6 @@ package com.studentsList.dao.studentDaoImpl;
 import com.studentsList.dao.studentDao.StudentDao;
 import com.studentsList.model.Student;
 
-import java.sql.*;
-import java.util.*;
-
 public class StudentDaoImpl implements StudentDao {
 
     public Connection connection = null;

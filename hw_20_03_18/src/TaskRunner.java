@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class TaskRunner {
     public static void main(String[] args) {
         printHashMap();//task #1

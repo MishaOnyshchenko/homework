@@ -1,5 +1,3 @@
-import java.util.regex.*;
-
 public class RegExpRunner {
 
     /*Написать регулярное выражение которое проверяет корректность номера.

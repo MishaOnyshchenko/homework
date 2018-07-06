@@ -1,7 +1,5 @@
 package com.studentsList.service.connection;
 
-import java.sql.*;
-
 public class JdbcConnection {
 
     private static Connection connection = null;

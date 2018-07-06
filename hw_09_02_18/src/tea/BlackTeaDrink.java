@@ -1,6 +1,6 @@
 package tea;
+
 import ingredients.BlackTea;
-import ingredients.Sugar;
 
 public class BlackTeaDrink extends BoildWater implements BlackTea{
 

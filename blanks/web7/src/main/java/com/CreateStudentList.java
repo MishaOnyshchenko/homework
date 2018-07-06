@@ -1,7 +1,5 @@
 package com;
 
-import java.util.*;
-
 public class CreateStudentList {
 
     public static List <Student> studlist = new ArrayList<>();

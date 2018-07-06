@@ -1,5 +1,3 @@
-import java.sql.*;
-
 public class TestJdbcConnection {
 
     private static Connection connection = null;

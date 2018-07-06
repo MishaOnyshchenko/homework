@@ -1,7 +1,5 @@
 package com.studentsList.model.createStudents;
 
-import java.sql.*;
-
 public class CreateStudents {
 
     public Connection connection = null;

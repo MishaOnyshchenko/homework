@@ -2,8 +2,6 @@ import domenObject.Student;
 import service.reader_pack.ScriptReader;
 import service.writer_pack.ScriptWriter;
 
-import java.util.*;
-
 public class Main {
 
     public static void main(String[] args) {

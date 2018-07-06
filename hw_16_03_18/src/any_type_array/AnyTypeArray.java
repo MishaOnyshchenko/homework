@@ -1,7 +1,5 @@
 package any_type_array;
 
-import java.util.*;
-
 public class AnyTypeArray <T>{
     private T [] array;
 
