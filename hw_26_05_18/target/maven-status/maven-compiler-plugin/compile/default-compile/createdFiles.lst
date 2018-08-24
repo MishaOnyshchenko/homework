@@ -1,0 +1,10 @@
+TestJdbcConnection.class
+dao\MainStudentDao.class
+service\writer_pack\ScriptWriterService.class
+service\writer_pack\ScriptWriter.class
+dao\StudentDaoImpl.class
+Main.class
+service\reader_pack\ScriptReader.class
+service\reader_pack\ScriptReaderService.class
+dao\StudentDao.class
+domenObject\Student.class

@@ -1,7 +1,6 @@
 com\studentsList\model\Student.class
 com\studentsList\AccessStudents.class
 com\studentsList\dao\studentDaoImpl\StudentDaoImpl.class
-com\studentsList\CallingClassFromJsp.class
 com\studentsList\service\connection\JdbcConnection.class
 com\studentsList\dao\studentDao\StudentDao.class
 com\studentsList\model\createStudents\CreateStudents.class

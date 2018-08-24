@@ -1,3 +1,5 @@
+com\testSpring\controller\AddController.class
 com\testSpring\controller\TestController.class
+com\testSpring\model\Student.class
 com\testSpring\config\Initializer.class
 com\testSpring\config\WebAppConfig.class

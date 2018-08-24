@@ -26,6 +26,12 @@
 <a href="/show/delAll">Delete all students</a>
 <br/><br/>
 
+<form action="/show/del" method="get" modelAttribute="student">
+    <input type="text" name = "surname" placeholder="surname">
+    <input type="submit" value="del">
+</form>
+<br/>
+
 
 
 

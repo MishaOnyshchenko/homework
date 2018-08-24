@@ -1,5 +1,10 @@
 package com.studentsList.model.createStudents;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class CreateStudents {
 
     public Connection connection = null;
@@ -7,6 +12,7 @@ public class CreateStudents {
     public CreateStudents(Connection connection) {
         this.connection = connection;
     }
+
 
     public void fillStudentsTable(int size) throws SQLException {
 
@@ -28,6 +34,6 @@ public class CreateStudents {
             ps.setString(3, "Armstrong" + i);
             ps.executeUpdate();
         }
-//        System.out.println("index = " + index);
+//       System.out.println("index = " + index);
     }
 }

@@ -2,6 +2,17 @@ import domenObject.Student;
 import service.reader_pack.ScriptReader;
 import service.writer_pack.ScriptWriter;
 
+import java.util.*;
+
+
+//2. Создать таблицу student :
+//
+//name
+//surname
+//phone
+//email
+//где все поля не могут быть пустыми, а телефон и емейл  еще и уникальные.
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,7 +23,7 @@ public class Main {
         /*create the object of ScriptReader class*/
         ScriptReader reader = new ScriptReader();
 
-        /*start the method to read the first script wit students, count them and fill ArrayList*/
+        /*start the method to read the first script with students, count them and fill ArrayList*/
         reader.readScriptAndFillCollection(studList);
 
         /*print how many students*/

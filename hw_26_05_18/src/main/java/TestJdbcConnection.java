@@ -1,3 +1,5 @@
+import java.sql.*;
+
 public class TestJdbcConnection {
 
     private static Connection connection = null;
@@ -25,7 +27,7 @@ public class TestJdbcConnection {
         try{
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/student_db",
-                    "postgres", "qwerty");
+                    "postgres", "postgres");
         }
         catch(ClassNotFoundException exc){
             System.out.println("PostgreSQL JDBC Driver couldn't find! Include it your library path!");
@@ -47,7 +49,7 @@ public class TestJdbcConnection {
 
         while (rs.next()){
             cnt++;
-            System.out.println( cnt + ". " + rs.getString(1) + " " + rs.getString(2));
+            System.out.println(cnt + ". " + rs.getString(1) + " " + rs.getString(2));
         }
         System.out.println("\nTotal: " + cnt + " students in the table.\n");
     }

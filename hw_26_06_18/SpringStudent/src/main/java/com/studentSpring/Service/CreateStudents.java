@@ -12,21 +12,6 @@ public class CreateStudents {
 
 
     public ArrayList<Student> create(){
-//        Student st1 = new Student();
-//        st1.setName("Vasya");
-//        st1.setSurname("Petya");
-//        st1.setGender("m");
-//        students.add(st1);
-//
-//
-//        Student st2 = new Student();
-//        st2.setName("Vasya2");
-//        st2.setSurname("Petya2");
-//        st2.setGender("m2");
-//        students.add(st2);
-//        for (Student s: students) {
-//            System.out.println(s.getName() + " " + s.getSurname() + ", " + s.getGender());
-//        }
 
         if(students.isEmpty()){
             for(int i = 1; i <= 10; i++){

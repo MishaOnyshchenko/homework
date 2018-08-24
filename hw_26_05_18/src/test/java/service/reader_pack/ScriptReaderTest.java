@@ -3,6 +3,8 @@ package service.reader_pack;
 import domenObject.Student;
 import org.junit.Test;
 
+import java.util.*;
+
 import static junit.framework.TestCase.assertEquals;
 
 public class ScriptReaderTest {
@@ -19,7 +21,7 @@ public class ScriptReaderTest {
         String expectedName = "bim";
         assertEquals(expectedName, actualName);
 
-        String actualSurname = scriptReader.readScriptAndFillCollection(studentList).get(0).getSer_name();
+        String actualSurname = scriptReader.readScriptAndFillCollection(studentList).get(0).getSurname();
         String expectedSurname = "frick";
         assertEquals(expectedSurname, actualSurname);
 

@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class CloserToTen {
     public static void main(String[] args) {
         double m, n, resM, resN;
-        System.out.println("Enter value for m: ");
+        System.out.print("Enter value for m: ");
         Scanner mScn = new Scanner(System.in);
         m = mScn.nextDouble();
-        System.out.println("Enter value for n: ");
-        Scanner nScn = new Scanner (System.in);
+        System.out.print("Enter value for n: ");
+        Scanner nScn = new Scanner(System.in);
         n = nScn.nextDouble();
         if(m > 10){
             resM = m - 10;

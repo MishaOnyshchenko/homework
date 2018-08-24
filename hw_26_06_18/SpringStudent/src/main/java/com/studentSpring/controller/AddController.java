@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class AddController {
 
 
-
     @RequestMapping(method = RequestMethod.GET)
     public String showPage(@ModelAttribute Student student, Model model){
         model.addAttribute("students", CreateStudents.students);
@@ -38,12 +37,12 @@ public class AddController {
     }
 
 
-//    @RequestMapping(value = "/del", method = RequestMethod.GET)
-//    public String delete(@ModelAttribute Student student){
-//        strings.remove(student.getName());
-//        System.out.println(student.getName());
-//        return "redirect:/show";
-//    }
+    @RequestMapping(value = "/del", method = RequestMethod.GET)
+    public String delete(@ModelAttribute Student student){
+//        CreateStudents.students.remove(student);
+        CreateStudents.students.removeIf(student1 -> student != null);
+        return "redirect:/show";
+    }
 }
 
 

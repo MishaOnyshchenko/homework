@@ -1,7 +1,6 @@
-D:\0 - Java\Projects\hw_12_06_18\src\main\java\com\studentsList\AccessStudents.java
-D:\0 - Java\Projects\hw_12_06_18\src\main\java\com\studentsList\model\Student.java
-D:\0 - Java\Projects\hw_12_06_18\src\main\java\com\studentsList\dao\studentDao\StudentDao.java
-D:\0 - Java\Projects\hw_12_06_18\src\main\java\com\studentsList\model\createStudents\CreateStudents.java
-D:\0 - Java\Projects\hw_12_06_18\src\main\java\com\studentsList\service\connection\JdbcConnection.java
-D:\0 - Java\Projects\hw_12_06_18\src\main\java\com\studentsList\dao\studentDaoImpl\StudentDaoImpl.java
-D:\0 - Java\Projects\hw_12_06_18\src\main\java\com\studentsList\CallingClassFromJsp.java
+D:\0 - Java\0 - projects\0_hw\homework\blanks\jdbc_sql_dao_jsp\hw_12_06_18\src\main\java\com\studentsList\AccessStudents.java
+D:\0 - Java\0 - projects\0_hw\homework\blanks\jdbc_sql_dao_jsp\hw_12_06_18\src\main\java\com\studentsList\dao\studentDaoImpl\StudentDaoImpl.java
+D:\0 - Java\0 - projects\0_hw\homework\blanks\jdbc_sql_dao_jsp\hw_12_06_18\src\main\java\com\studentsList\service\connection\JdbcConnection.java
+D:\0 - Java\0 - projects\0_hw\homework\blanks\jdbc_sql_dao_jsp\hw_12_06_18\src\main\java\com\studentsList\model\Student.java
+D:\0 - Java\0 - projects\0_hw\homework\blanks\jdbc_sql_dao_jsp\hw_12_06_18\src\main\java\com\studentsList\dao\studentDao\StudentDao.java
+D:\0 - Java\0 - projects\0_hw\homework\blanks\jdbc_sql_dao_jsp\hw_12_06_18\src\main\java\com\studentsList\model\createStudents\CreateStudents.java

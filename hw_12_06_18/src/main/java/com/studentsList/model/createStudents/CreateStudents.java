@@ -1,5 +1,10 @@
 package com.studentsList.model.createStudents;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class CreateStudents {
 
     public Connection connection = null;

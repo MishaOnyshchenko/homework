@@ -3,14 +3,14 @@ package domenObject;
 public class Student {
 
     private String name;
-    private String ser_name;
+    private String surname;
     private String phone;
     private String email;
 
 
-    public Student(String name, String ser_name, String phone, String email) {
+    public Student(String name, String surname, String phone, String email) {
         this.name = name;
-        this.ser_name = ser_name;
+        this.surname = surname;
         this.phone = phone;
         this.email = email;
     }
@@ -23,12 +23,12 @@ public class Student {
         this.name = name;
     }
 
-    public String getSer_name() {
-        return ser_name;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setSer_name(String ser_name) {
-        this.ser_name = ser_name;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getPhone() {
@@ -51,7 +51,7 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", ser_name='" + ser_name + '\'' +
+                ", surname='" + surname + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 '}';

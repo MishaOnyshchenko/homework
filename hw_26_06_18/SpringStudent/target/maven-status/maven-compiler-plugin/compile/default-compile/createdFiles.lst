@@ -1,0 +1,6 @@
+com\studentSpring\config\WebAppConfig.class
+com\studentSpring\controller\TestController.class
+com\studentSpring\Service\CreateStudents.class
+com\studentSpring\controller\AddController.class
+com\studentSpring\config\Initializer.class
+com\studentSpring\model\Student.class

@@ -2,6 +2,7 @@ package dao;
 
 import domenObject.Student;
 
+import java.sql.*;
 import java.util.List;
 
 public class StudentDaoImpl implements StudentDao {
@@ -17,7 +18,7 @@ public class StudentDaoImpl implements StudentDao {
         try{
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/student_db",
-                    "postgres", "qwerty");
+                    "postgres", "postgres");
         }
         catch(ClassNotFoundException e){
             e.printStackTrace();
@@ -42,7 +43,7 @@ public class StudentDaoImpl implements StudentDao {
 
         while(rs.next()){
             student = new Student(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4));
-            System.out.println(rs.getInt(5) + ". " + student.getName() + " " + student.getSer_name() + ", tel: " + student.getPhone() + ", email: " + student.getEmail());
+            System.out.println(rs.getInt(5) + ". " + student.getName() + " " + student.getSurname() + ", tel: " + student.getPhone() + ", email: " + student.getEmail());
             studListDao.add(student);
         }
         return studListDao;
@@ -55,7 +56,7 @@ public class StudentDaoImpl implements StudentDao {
         ResultSet rs = ps.executeQuery();
         rs.next();
         Student student = new Student(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4));
-        System.out.println(rs.getInt(5) + ". " + student.getName() + " " + student.getSer_name() + ", tel: " + student.getPhone() + ", email: " + student.getEmail());
+        System.out.println(rs.getInt(5) + ". " + student.getName() + " " + student.getSurname() + ", tel: " + student.getPhone() + ", email: " + student.getEmail());
 
         return student;
     }
@@ -63,12 +64,12 @@ public class StudentDaoImpl implements StudentDao {
     @Override
     public Student selectBySurname(String surname) throws SQLException {
         Student student = null;
-        PreparedStatement ps = connection.prepareStatement("SELECT * FROM student WHERE ser_name = ?");
+        PreparedStatement ps = connection.prepareStatement("SELECT * FROM student WHERE surname = ?");
         ps.setString(1, surname);
         ResultSet rs = ps.executeQuery();
         while(rs.next()){
             student = new Student(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4));
-            System.out.println(rs.getInt(5) + ". " + student.getName() + " " + student.getSer_name() + ", tel: " + student.getPhone() + ", email: " + student.getEmail());
+            System.out.println(rs.getInt(5) + ". " + student.getName() + " " + student.getSurname() + ", tel: " + student.getPhone() + ", email: " + student.getEmail());
         }
         return student;
     }

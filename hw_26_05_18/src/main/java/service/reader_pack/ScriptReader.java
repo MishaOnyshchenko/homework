@@ -2,16 +2,23 @@ package service.reader_pack;
 
 import domenObject.Student;
 
-        /*Нужно найти способ сгенерировать данные таблицы в файл любого расширения.
-        После чего программно считать его и вывести в консоль:
-        - количество студентов в таблице;
-        - всех студентов которые имеют почту на домене gmail.com;
-        - вывести однофамильцев.*/
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/*Нужно найти способ сгенерировать данные таблицы в файл любого расширения.
+После чего программно считать его и вывести в консоль:
+- количество студентов в таблице;
+- всех студентов которые имеют почту на домене gmail.com;
+- вывести однофамильцев.*/
 public class ScriptReader implements ScriptReaderService {
 
     public static int count = 0;
 
-    private static final String INSERT_SCRIPT_FILE = "D:\\0 - Java\\0 - projects\\javaKonang\\Misha_Onyshchenko\\student_home_works\\Misha_Onyshchenko\\src\\hw_26_05_18\\src\\main\\resources\\insert_student_db.sql";
+    private static final String INSERT_SCRIPT_FILE = "D:\\0 - Java\\0_projects\\0_hw\\homework\\hw_26_05_18\\src\\main\\resources\\insert_student_db.sql";
 
     @Override
     public List<Student> readScriptAndFillCollection(List<Student> studList) {
@@ -49,7 +56,7 @@ public class ScriptReader implements ScriptReaderService {
         for (Student s : studList) {
             Matcher m = p.matcher(s.getEmail());
             if (m.matches()) {
-                System.out.println(s.getName() + " " + s.getSer_name() + " is using gmail: " + s.getEmail());
+                System.out.println(s.getName() + " " + s.getSurname() + " is using gmail: " + s.getEmail());
             }
         }
     }
@@ -61,8 +68,8 @@ public class ScriptReader implements ScriptReaderService {
             Student firstStudent = studList.get(i);
             for (int j = i + 1; j < studList.size(); j++) {
                 Student secondStudent = studList.get(j);
-                if (firstStudent.getSer_name().equals(secondStudent.getSer_name())) {
-                    System.out.println("\nNamesakes: " + firstStudent.getName() + " " + firstStudent.getSer_name() + " and " + secondStudent.getName() + " " + secondStudent.getSer_name() + "!");
+                if (firstStudent.getSurname().equals(secondStudent.getSurname())) {
+                    System.out.println("\nNamesakes: " + firstStudent.getName() + " " + firstStudent.getSurname() + " and " + secondStudent.getName() + " " + secondStudent.getSurname() + "!");
                 }
             }
         }
@@ -75,7 +82,7 @@ public class ScriptReader implements ScriptReaderService {
         for (Student s : studList) {
             Matcher m = p.matcher(s.getPhone());
             if(m.matches()){
-                System.out.println(s.getName() + " " + s.getSer_name() + ", tel: " + s.getPhone());
+                System.out.println(s.getName() + " " + s.getSurname() + ", tel: " + s.getPhone());
             }
         }
     }
@@ -87,7 +94,7 @@ public class ScriptReader implements ScriptReaderService {
         for (Student s : studList) {
             Matcher m = p.matcher(s.getPhone());
             if(m.matches()){
-                System.out.println(s.getName() + " " + s.getSer_name() + ", tel: " + s.getPhone());
+                System.out.println(s.getName() + " " + s.getSurname() + ", tel: " + s.getPhone());
             }
         }
     }
@@ -99,7 +106,7 @@ public class ScriptReader implements ScriptReaderService {
         for (Student s : studList) {
             Matcher m = p.matcher(s.getPhone());
             if(m.matches()){
-                System.out.println(s.getName() + " " + s.getSer_name() + ", tel: " + s.getPhone());
+                System.out.println(s.getName() + " " + s.getSurname() + ", tel: " + s.getPhone());
             }
         }
     }
