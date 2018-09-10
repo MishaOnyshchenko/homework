@@ -11,7 +11,7 @@ public class JdbcConnection {
         System.out.println("----------- PostgreSQL JDBC Connection testing -------------");
         try{
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","qwerty");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres","postgres","postgres");
         }
         catch(ClassNotFoundException exc){
             System.out.println("PostgreSQL JDBC Driver couldn't find! Include it your library path!");
