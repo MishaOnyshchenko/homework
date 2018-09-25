@@ -1,0 +1,17 @@
+{
+  "name": "Pavlik",
+
+  "age": 45,
+
+  "task_list": [
+    {
+      "title": "bag"
+    },
+    {
+      "title": "sox"
+    },
+    {
+      "title": "ear"
+    }
+  ]
+}
