@@ -1,0 +1,32 @@
+{
+  "rcc": [
+    {
+      "sofit": {
+        "Place": "Соборным МВД УВД",
+        "Country": "UA",
+        "date": "2009-08-02",
+        "Type": "000001",
+        "Num": "144114",
+        "Ser": "ЫЫ",
+        "Country": "UA",
+        "Lang": "ru",
+        "Sex": "M",
+        "birthday": "1990-05-05",
+        "fio_en": "dianorev",
+        "ua_name": "Евреевичев",
+        "ua_name": "Тест",
+        "ua_name": "Бунев",
+        "ru_name": "Евреевичев",
+        "ru_name": "Тест",
+        "ru_name": "Бунев",
+        "Status": "J"
+      },
+      "ovk": [
+        "Id"
+      ],
+      "token": "123456",
+      "type_operation": "human_add",
+      "comment": "add human person from space"
+    }
+  ]
+}

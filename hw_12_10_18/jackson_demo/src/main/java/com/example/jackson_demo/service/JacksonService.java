@@ -24,12 +24,6 @@ public class JacksonService {
 
     File jsonFile = new File("D:\\0 - Java\\trash\\jackson_demo\\src\\main\\resources\\parseJson.json");
 
-//    public String json()throws IOException {
-//        final String JSON = new String(
-//                Files.readAllBytes(Paths.get("D:\\0 - Java\\trash\\jackson_demo\\src\\main\\resources\\parseJson.json")), "UTF-8");
-//        return JSON;
-//    }
-
 
     public String parseWithJsonNode() throws IOException {
 

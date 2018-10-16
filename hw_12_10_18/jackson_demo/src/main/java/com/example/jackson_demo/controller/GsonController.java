@@ -11,24 +11,27 @@ import java.io.IOException;
 
 @RestController
 @Slf4j
-@RequestMapping
+@RequestMapping("/gson")
 public class GsonController {
 
     @Autowired
     GsonService gsonService;
 
-//    @GetMapping
-//    public String hello(){
-//        return "Hello from GSON controller";
-//    }
 
-    @GetMapping("/object")
+    @GetMapping("/create/object")
     public Object createObjectFromJson()throws IOException {
         return gsonService.jsonIntoObject();
     }
 
-    @GetMapping
+    @GetMapping("/create/json")
     public String createJsonFromObject()throws IOException{
         return gsonService.jsonFromObject();
     }
+
+    @GetMapping("/reader")
+    public String jsonReader()throws IOException{
+        return gsonService.jsonReader();
+    }
+
+
 }

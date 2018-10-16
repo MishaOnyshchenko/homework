@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @RestController
 @Slf4j
-@RequestMapping
+@RequestMapping("/tutorJson")
 public class JacksonController {
 
     @Autowired
@@ -27,7 +27,6 @@ public class JacksonController {
     public String jsonParser()throws IOException{
         return jacksonService.parseWithJsonParser();
     }
-
 
 
 }
